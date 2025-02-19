@@ -1,7 +1,13 @@
 *{
-    
-    font-family: Arial, Helvetica, sans-serif;
-    
+                margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+body{
+    max-width: 70%;
+    margin: 50 px;
 }
 h1{
     text-align: center;
@@ -10,3 +16,45 @@ h1{
 h4{
     text-align: center;
 }
+.expense-input{
+    display: flex;
+    margin: 10px;
+    justify-content: space-between;
+    gap: 5px;
+}
+#addButton{
+    max-height: 20px;
+ margin-top:40px ;
+ background-color: rgb(61, 103, 228);
+ border: 5px;
+  border-radius: 3px;
+  padding: 5px;
+  cursor: pointer;
+}
+#addButton:hover{
+    transition: all;
+    background-color: black;
+    color: antiquewhite;
+}
+.filters{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.container{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+
+}
+.filter{
+    padding: 5px 10px;
+            border: none;
+            background: #3498db;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .filters button:hover {
+            background: #020507;
+        }

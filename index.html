@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Expense Tracker
-
- </title>
- <link rel="stylesheet" href="./styles.css">
- 
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Expense Tracker</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
     <div class="container">
-        <h1>Personal Expense Tracker</h1>
-        <h4>Enter your expenses!</h4>
-        <div class="expense-input">
-            <h5>Amount</h5>
-            <input type="number" id="inputExpense" placeholder="00000">
-            <h5>Date</h5>
-            <input type="date" id="inputDate">
-            <h5>Description</h5>
-            <input type="text" id="inputDescription" placeholder="Expense Description">
-             <button onclick="addexpense()">Add Expense</button>
+      <h1>Personal Expense Tracker</h1>
+      <h4>Enter your expenses!</h4>
+      <div class="expense-input">
+        <div class="amount">
+          <h5>Amount</h5>
+          <input type="number" id="inputExpense" placeholder="00000" />
         </div>
-        <div class="filters">
-            <button onclick="">Category</button>
-             <button onclick="">Date Range</button>
-              <button onclick="">Reset </button>
+        <div class="date">
+          <h5>Date</h5>
+          <input type="date" id="inputDate" />
         </div>
-        <ul class="expense-list" id="expenseList"></ul>
+        <div>
+          <h5>Description</h5>
+          <input
+            type="text"
+            id="inputDescription"
+            placeholder="Expense Description"
+          />
+        </div>
+
+        <div>
+          <h1></h1>
+          <button onclick="addexpense()" id="addButton">Add </button>
+        </div>
+      </div>
+      <div class="filters">
+        <button onclick="filterExpenses(category)" class="filter">Category</button>
+        <button onclick="filterExpenses(DateRange)" class="filter">Date Range</button>
+        <button onclick="" class="filter">Reset</button>
+      </div>
+      <ul class="expense-list" id="expenseList"></ul>
     </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>
