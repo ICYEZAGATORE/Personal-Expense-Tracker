@@ -1,60 +1,82 @@
-*{
-                margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
 
-body{
-    max-width: 70%;
-    margin: 50 px;
+body {
+  max-width: 70%;
+  margin: 50 px;
 }
-h1{
-    text-align: center;
-    color: rgb(61, 103, 228);
+.container {
+  width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
-h4{
-    text-align: center;
+h1 {
+  text-align: center;
+  color: rgb(61, 103, 228);
+  margin-bottom: 5px;
 }
-.expense-input{
-    display: flex;
-    margin: 10px;
-    justify-content: space-between;
-    gap: 5px;
+h4 {
+  text-align: center;
+  margin-bottom: 5px;
 }
-#addButton{
-    max-height: 20px;
- margin-top:40px ;
- background-color: rgb(61, 103, 228);
- border: 5px;
-  border-radius: 3px;
+.expense-input {
+  display: flex;
+  margin: 10px;
+  justify-content: space-between;
+  gap: 5px;
+  
+}
+#addButton {
+  background: #3498db;
+  color: white;
+  border: none;
   padding: 5px;
+  border-radius: 5px;
   cursor: pointer;
 }
-#addButton:hover{
-    transition: all;
-    background-color: black;
-    color: antiquewhite;
+#addButton:hover {
+  transition: all;
+  background-color: black;
+  color: antiquewhite;
 }
-.filters{
-    display: flex;
-    justify-content: space-between;
-   
+.filters {
+  display: flex;
+  justify-content: space-between;
 }
-.container{
-    max-width: fit-content;
-    display: flex;
-    flex-direction: column;
-
+.container {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
 }
-.filter{
-    padding: 5px 10px;
-            border: none;
-            background: #3498db;
-            color: white;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .filters button:hover {
-            background: #020507;
-        }
+.filter {
+  padding: 5px 10px;
+  border: none;
+  background: #3498db;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.filters button:hover {
+  background: #020507;
+}
+@media (max-width: 768px) {
+            body {
+                flex-direction: column;
+            }
+            .container {
+                width: 100%;
+                text-align: center;
+            }
+            .expense-input{
+                width: 100%;
+            }
+            .columns {
+                flex-direction: column;
+            }}
